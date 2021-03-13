@@ -21,10 +21,9 @@ public class ClientController {
     private ClientService service;
 
     @GetMapping
-    public ResponseEntity<List<ClientDTO>> getClient(){
-        List <ClientDTO> list = service.getClients();
+    public ResponseEntity<List<ClientDTO>> getClient() {
+        List<ClientDTO> list = service.getClients();
         return ResponseEntity.ok().body(list);
     }
-
 
 }
